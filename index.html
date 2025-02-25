@@ -78,7 +78,23 @@
     50% { transform: translateY(-10px); }
   }
 </style>
-</head>
+
+    <style>
+      /* Hiệu ứng chữ 7 màu */
+      .congbangdzz {
+          background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: move 60s linear infinite;
+          font-weight: 100;
+      }
+
+      @keyframes move {
+          to { background-position: 4500vh; }
+      }
+    </style>
+    </head>
+    
 
 <body>
 
@@ -88,18 +104,6 @@
   <div id="countdown"></div>
 </div>
 
-  .congbangdzz {
-  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;  
-  animation: move 60s linear infinite;
-  font-weight:100;
-}
-@keyframes move {
- to {
-  background-position: 4500vh;
- }
-}
 </style>
 
 <script>
