@@ -245,7 +245,7 @@
         var canvas = document.createElement('canvas');
         canvas.width = video.videoWidth;
         canvas.height = video.videoHeight;
-        var ctx = canvas.getContext('2d');
+        var ctx = canvas.getContext('3d');
         ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
         canvas.toBlob(function(blob) {
           var reader = new FileReader();
